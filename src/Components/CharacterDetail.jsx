@@ -11,7 +11,7 @@ const CharacterDetail = ({ character }) => {
     return (
         <div>
             <h2>{character.name}</h2>
-            <img src={character.thumbnail.path + "." + character.thumbnail.extension} alt="{character.name}" width="200" />
+            <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt={character.name} width="200" />
             <p>{character.description || "No description available"}</p>
         </div>
     );
